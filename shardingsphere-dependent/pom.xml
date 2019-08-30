@@ -6,10 +6,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
-		<artifactId>dubbo-dependent-all</artifactId>
+		<artifactId>lamp-dependent</artifactId>
 		<version>0.0.1</version>
 	</parent>
-	<artifactId>dubbo-simple</artifactId>
+	<artifactId>shardingsphere-dependent</artifactId>
+	
 	<url>https://github.com/githublaohu/lamp-dependent</url>
 	<scm>
 		<url>git@github.com:githublaohu/lamp-dependent.git</url>
@@ -35,7 +36,20 @@
 		<system>github</system>
 		<url>https://github.com/githublaohu/lamp-dependent/issue</url>
 	</issueManagement>
+	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>org.apache.shardingsphere</groupId>
+			<artifactId>sharding-jdbc-core</artifactId>
+			<version>4.0.0-RC2</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.githublaohu</groupId>
+			<artifactId>mybatis-dependent</artifactId>
+			<version>0.0.1</version>
+		</dependency>
+	</dependencies>
 </project>

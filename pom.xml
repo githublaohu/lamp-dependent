@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>lamp</groupId>
-  <artifactId>lamp-dependent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  <modules>
-    <module>mybatis-dependent</module>
-    <module>dubbo-dependent-all</module>
-  </modules>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>io.github.githublaohu</groupId>
+	<artifactId>lamp-dependent</artifactId>
+	<version>0.0.1</version>
+	<packaging>pom</packaging>
+	<url>https://github.com/githublaohu/lamp-dependent</url>
+	<scm>
+		<url>git@github.com:githublaohu/lamp-dependent.git</url>
+		<connection>scm:git@github.com:githublaohu/lamp-dependent.git</connection>
+		<developerConnection>scm:git@github.com:githublaohu/lamp-dependent.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<developers>
+		<developer>
+			<name>laohu</name>
+			<email>2372554140@qq.com</email>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/githublaohu/lamp-dependent/issue</url>
+	</issueManagement>
+	
+	<modules>
+		<module>mybatis-dependent</module>
+		<module>dubbo-dependent-all</module>
+		<module>shardingsphere-dependent</module>
+	</modules>
 </project>

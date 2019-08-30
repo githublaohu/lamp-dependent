@@ -5,13 +5,37 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>lamp</groupId>
+		<groupId>io.github.githublaohu</groupId>
 		<artifactId>lamp-dependent</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.1</version>
 	</parent>
 	<artifactId>mybatis-dependent</artifactId>
 	<name>mybatis-dependent</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/githublaohu/lamp-dependent</url>
+	<scm>
+		<url>git@github.com:githublaohu/lamp-dependent.git</url>
+		<connection>scm:git@github.com:githublaohu/lamp-dependent.git</connection>
+		<developerConnection>scm:git@github.com:githublaohu/lamp-dependent.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+	<developers>
+		<developer>
+			<name>laohu</name>
+			<email>2372554140@qq.com</email>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+	
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/githublaohu/lamp-dependent/issue</url>
+	</issueManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
@@ -25,11 +49,23 @@
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>2.0.1</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
 			<version>1.2.10</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-starter</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>com.alibaba</groupId>

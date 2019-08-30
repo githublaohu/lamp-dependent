@@ -1,4 +1,4 @@
-package org.dubbo.springmvc;
+package org.shardingsphere.dependent;
 
 /**
  * Hello world!
