@@ -48,7 +48,6 @@
 		<dubbo.version>2.7.3</dubbo.version>
 		<spring-version>5.0.15.RELEASE</spring-version>
 		<spring-boot-version>2.1.7.RELEASE</spring-boot-version>
-		<nacos-version>0.2.1</nacos-version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -85,11 +84,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-redis</artifactId>
 			<version>${spring-boot-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.alibaba.boot</groupId>
-			<artifactId>nacos-config-spring-boot-starter</artifactId>
-			<version>${nacos-version}</version>
 		</dependency>
 
 	</dependencies>
