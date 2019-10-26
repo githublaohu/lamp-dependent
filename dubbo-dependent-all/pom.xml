@@ -48,6 +48,7 @@
 		<dubbo.version>2.7.3</dubbo.version>
 		<spring-version>5.0.15.RELEASE</spring-version>
 		<spring-boot-version>2.1.7.RELEASE</spring-boot-version>
+		<nacos_version>1.1.1</nacos_version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -65,6 +66,21 @@
 	</dependencyManagement>
 
 	<dependencies>
+   		<dependency>
+		    <groupId>org.apache.dubbo</groupId>
+		    <artifactId>dubbo-registry-nacos</artifactId>
+		    <version>${dubbo.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.dubbo</groupId>
+		    <artifactId>dubbo-registry-api</artifactId>
+		    <version>${dubbo.version}</version>
+		</dependency>
+		<dependency>
+	        <groupId>com.alibaba.nacos</groupId>
+	        <artifactId>nacos-client</artifactId>
+	        <version>${nacos_version}</version>
+	    </dependency> 	
 		<dependency>
 			<groupId>org.apache.dubbo</groupId>
 			<artifactId>dubbo-spring-boot-starter</artifactId>
