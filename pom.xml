@@ -39,5 +39,7 @@
 		<module>mybatis-dependent</module>
 		<module>dubbo-dependent-all</module>
 		<module>shardingsphere-dependent</module>
+		<module>test-dependent</module>
+		<module>log-dependent-all</module>
 	</modules>
 </project>
