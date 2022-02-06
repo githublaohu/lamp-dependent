@@ -6,7 +6,7 @@
 	<groupId>io.github.githublaohu</groupId>
 	<artifactId>lamp-dependent</artifactId>
 	<name>lamp-dependent</name>
-	<version>0.0.1</version>
+	<version>${reversion}</version>
 	<packaging>pom</packaging>
 	<url>https://github.com/githublaohu/lamp-dependent</url>
 	<scm>
@@ -22,6 +22,9 @@
 			<email>2372554140@qq.com</email>
 		</developer>
 	</developers>
+	<properties>
+		<reversion>0.1.0</reversion>
+	</properties>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>

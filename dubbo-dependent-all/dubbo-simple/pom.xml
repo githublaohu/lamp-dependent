@@ -7,7 +7,8 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>dubbo-dependent-all</artifactId>
-		<version>0.0.1</version>
+		<version>${reversion}</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>dubbo-simple</artifactId>
 	<url>https://github.com/githublaohu/lamp-dependent</url>
@@ -30,7 +31,7 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
+
 	<issueManagement>
 		<system>github</system>
 		<url>https://github.com/githublaohu/lamp-dependent/issue</url>
