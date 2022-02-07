@@ -5,11 +5,10 @@
   <parent>
     <groupId>io.github.githublaohu</groupId>
     <artifactId>dubbo-dependent-all</artifactId>
-	<version>${reversion}</version>
+	<version>0.1.0</version>
 	<relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>dubbo-provider</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>dubbo-provider</name>
   <url>https://github.com/githublaohu/lamp-dependent</url>
 	<scm>
@@ -43,7 +42,7 @@
     <dependency>
      	<groupId>io.github.githublaohu</groupId>
      	<artifactId>mybatis-dependent</artifactId>
-		<version>${reversion}</version>
+		<version>${project.version}</version>
     </dependency>
   </dependencies>
 </project>
