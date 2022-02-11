@@ -6,7 +6,7 @@
 	<groupId>io.github.githublaohu</groupId>
 	<artifactId>lamp-dependent</artifactId>
 	<name>lamp-dependent</name>
-	<version>0.0.1</version>
+	<version>0.1.0</version>
 	<packaging>pom</packaging>
 	<url>https://github.com/githublaohu/lamp-dependent</url>
 	<scm>
@@ -22,6 +22,9 @@
 			<email>2372554140@qq.com</email>
 		</developer>
 	</developers>
+	<properties>
+		<reversion>0.1.0</reversion>
+	</properties>
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -29,12 +32,12 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
-	
+
 	<issueManagement>
 		<system>github</system>
 		<url>https://github.com/githublaohu/lamp-dependent/issue</url>
 	</issueManagement>
-	
+
 	<modules>
 		<module>mybatis-dependent</module>
 		<module>dubbo-dependent-all</module>
@@ -42,4 +45,65 @@
 		<module>test-dependent</module>
 		<module>log-dependent-all</module>
 	</modules>
+	<profiles>
+		<profile>
+			<id>sonatype</id>
+			<build>
+				<plugins>
+				<!-- Source -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-source-plugin</artifactId>
+						<version>2.2.1</version>
+						<!--<executions>
+							<execution>
+							<phase>package</phase>
+								<goals>
+									<goal>jar-no-fork</goal>
+								</goals>
+							</execution>
+						</executions>-->
+					</plugin>
+					<!-- Javadoc -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-javadoc-plugin</artifactId>
+						<version>2.9.1</version>
+						<executions>
+						<execution>
+							<phase>package</phase>
+							<goals>
+								<goal>jar</goal>
+							</goals>
+						</execution>
+						</executions>
+					</plugin>
+					<!-- GPG -->
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-gpg-plugin</artifactId>
+						<version>1.5</version>
+						<!--<executions>
+							<execution>
+								<phase>verify</phase>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+						</executions>-->
+					</plugin>
+				</plugins>
+			</build>
+			<distributionManagement>
+				<snapshotRepository>
+					<id>sonatype</id>
+					<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+				</snapshotRepository>
+				<repository>
+				<id>sonatype</id>
+					<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+	</profiles>
 </project>

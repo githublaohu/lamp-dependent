@@ -6,7 +6,8 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>log-dependent-all</artifactId>
-		<version>0.0.1</version>
+		<version>0.1.0</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>log4j2-dependent</artifactId>
 	<name>log4j2-dependent</name>

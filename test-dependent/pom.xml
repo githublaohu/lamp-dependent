@@ -4,7 +4,8 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>lamp-dependent</artifactId>
-		<version>0.0.1</version>
+		<version>0.1.0</version>
+		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>test-dependent</artifactId>
 	<packaging>pom</packaging>
