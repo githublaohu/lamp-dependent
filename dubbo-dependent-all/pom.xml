@@ -48,7 +48,7 @@
 	<properties>
 		<dubbo.version>2.7.3</dubbo.version>
 		<spring-version>5.0.15.RELEASE</spring-version>
-		<spring-boot-version>2.1.7.RELEASE</spring-boot-version>
+		<spring-boot-version>2.5.12</spring-boot-version>
 		<nacos_version>1.1.1</nacos_version>
 	</properties>
 	<dependencyManagement>
