@@ -1,108 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>io.github.githublaohu</groupId>
-		<artifactId>lamp-dependent</artifactId>
-		<version>0.1.0</version>
-		<relativePath>../pom.xml</relativePath>
-	</parent>
-	<artifactId>dubbo-dependent-all</artifactId>
-	<packaging>pom</packaging>
-	
-	<url>https://github.com/githublaohu/lamp-dependent</url>
-	<scm>
-		<url>git@github.com:githublaohu/lamp-dependent.git</url>
-		<connection>scm:git@github.com:githublaohu/lamp-dependent.git</connection>
-		<developerConnection>scm:git@github.com:githublaohu/lamp-dependent.git</developerConnection>
-		<tag>HEAD</tag>
-	</scm>
-	<developers>
-		<developer>
-			<name>laohu</name>
-			<email>2372554140@qq.com</email>
-		</developer>
-	</developers>
-	<licenses>
-		<license>
-			<name>The Apache Software License, Version 2.0</name>
-			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-	
-	<issueManagement>
-		<system>github</system>
-		<url>https://github.com/githublaohu/lamp-dependent/issue</url>
-	</issueManagement>
-	
-	
-	<modules>
-		<module>dubbo-simple</module>
-		<module>dubbo-provider</module>
-		<module>dubbo-rest</module>
-		<module>dubbo-springmvc</module>
-	</modules>
-	<properties>
-		<dubbo.version>2.7.3</dubbo.version>
-		<spring-version>5.0.15.RELEASE</spring-version>
-		<spring-boot-version>2.1.7.RELEASE</spring-boot-version>
-		<nacos_version>1.1.1</nacos_version>
-	</properties>
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.apache.dubbo</groupId>
-				<artifactId>dubbo-rpc-rest</artifactId>
-				<version>${dubbo.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
-				<version>${spring-boot-version}</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>io.github.githublaohu</groupId>
+    <artifactId>lamp-dependent</artifactId>
+    <version>1.0.0</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  <artifactId>dubbo-dependent-all</artifactId>
+  <packaging>pom</packaging>
 
-	<dependencies>
-   		<dependency>
-		    <groupId>org.apache.dubbo</groupId>
-		    <artifactId>dubbo-registry-nacos</artifactId>
-		    <version>${dubbo.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.apache.dubbo</groupId>
-		    <artifactId>dubbo-registry-api</artifactId>
-		    <version>${dubbo.version}</version>
-		</dependency>
-		<dependency>
-	        <groupId>com.alibaba.nacos</groupId>
-	        <artifactId>nacos-client</artifactId>
-	        <version>${nacos_version}</version>
-	    </dependency> 	
-		<dependency>
-			<groupId>org.apache.dubbo</groupId>
-			<artifactId>dubbo-spring-boot-starter</artifactId>
-			<version>${dubbo.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-actuator</artifactId>
-			<version>${spring-boot-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
-			<version>${spring-boot-version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-redis</artifactId>
-			<version>${spring-boot-version}</version>
-		</dependency>
+  <url>https://github.com/githublaohu/lamp-dependent</url>
+  <scm>
+    <url>git@github.com:githublaohu/lamp-dependent.git</url>
+    <connection>scm:git@github.com:githublaohu/lamp-dependent.git</connection>
+    <developerConnection>scm:git@github.com:githublaohu/lamp-dependent.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+  <developers>
+    <developer>
+      <name>laohu</name>
+      <email>2372554140@qq.com</email>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
-	</dependencies>
+  <issueManagement>
+    <system>github</system>
+    <url>https://github.com/githublaohu/lamp-dependent/issue</url>
+  </issueManagement>
+
+
+  <modules>
+    <module>dubbo-simple</module>
+    <module>dubbo-provider</module>
+    <module>dubbo-rest</module>
+    <module>dubbo-springmvc</module>
+  </modules>
+  <properties>
+    <dubbo.version>3.2.7</dubbo.version>
+    <spring-version>6.0.13</spring-version>
+    <spring-boot-version>3.1.5</spring-boot-version>
+    <decoration-core-version>0.1.0</decoration-core-version>
+
+    <!-- bug 依赖 -->
+    <httpclient-version>4.5.14</httpclient-version>
+    <snakeyaml-version>2.2</snakeyaml-version>
+    <commons-codec-version>1.15</commons-codec-version>
+    <fastjson-version>2.0.42</fastjson-version>
+  </properties>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.apache.dubbo</groupId>
+        <artifactId>dubbo-rpc-rest</artifactId>
+        <version>${dubbo.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>${spring-boot-version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo-registry-api</artifactId>
+      <version>${dubbo.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo-registry-nacos</artifactId>
+      <version>${dubbo.version}</version>
+    </dependency>
+    <!-- 修正 dubbo bug 依赖 -->
+    <dependency>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>${httpclient-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-codec</groupId>
+      <artifactId>commons-codec</artifactId>
+      <version>${commons-codec-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.dubbo</groupId>
+      <artifactId>dubbo-spring-boot-starter</artifactId>
+      <version>${dubbo.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-actuator</artifactId>
+      <version>${spring-boot-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <version>${spring-boot-version}</version>
+    </dependency>
+    <!-- 修正 spring bug 依赖 -->
+    <dependency>
+      <groupId>org.yaml</groupId>
+      <artifactId>snakeyaml</artifactId>
+      <version>${snakeyaml-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-redis</artifactId>
+      <version>${spring-boot-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>cn.lampup</groupId>
+      <artifactId>decoration-core</artifactId>
+      <version>${decoration-core-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${fastjson-version}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.githublaohu</groupId>
+      <artifactId>logback-dependent</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- 数据转化依赖 -->
+    <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct</artifactId>
+      <version>1.5.3.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mapstruct</groupId>
+      <artifactId>mapstruct-processor</artifactId>
+      <version>1.5.3.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok-mapstruct-binding</artifactId>
+      <version>0.2.0</version>
+    </dependency>
+    <!-- 参数校验依赖 -->
+    <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>2.0.0.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.validation</groupId>
+      <artifactId>jakarta.validation-api</artifactId>
+      <version>3.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate.validator</groupId>
+      <artifactId>hibernate-validator</artifactId>
+      <version>8.0.1.Final</version>
+    </dependency>
+    <dependency>
+      <groupId>org.glassfish.expressly</groupId>
+      <artifactId>expressly</artifactId>
+      <version>5.0.0</version>
+    </dependency>
+
+    <!-- 单元测试 -->
+    <dependency>
+      <groupId>io.github.githublaohu</groupId>
+      <artifactId>test-spring-dependent</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.githublaohu</groupId>
+      <artifactId>test-mock-dependent</artifactId>
+      <version>${project.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
 
 </project>

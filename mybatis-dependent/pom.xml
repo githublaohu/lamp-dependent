@@ -7,7 +7,7 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>lamp-dependent</artifactId>
-		<version>0.1.0</version>
+		<version>1.0.0</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>mybatis-dependent</artifactId>
@@ -39,28 +39,44 @@
 	</issueManagement>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<mysql-version>8.0.28</mysql-version>
+		<druid-spring-boot-version>1.2.20</druid-spring-boot-version>
+		<mybatis-spring-boot-version>3.0.3</mybatis-spring-boot-version>
+		<pagehelper-spring-boot-version>2.0.0</pagehelper-spring-boot-version>
+
+		<protobuf-java-version>3.24.4</protobuf-java-version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-			<version>8.0.14</version>
+			<version>${mysql-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.protobuf</groupId>
+			<artifactId>protobuf-java</artifactId>
+			<version>${protobuf-java-version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
-			<version>2.0.1</version>
+			<version>${mybatis-spring-boot-version}</version>
 			<exclusions>
+				<exclusion>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-autoconfigure</artifactId>
+				</exclusion>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
+
 		<dependency>
 			<groupId>com.github.pagehelper</groupId>
 			<artifactId>pagehelper-spring-boot-starter</artifactId>
-			<version>1.2.10</version>
+			<version>${pagehelper-spring-boot-version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
@@ -71,11 +87,15 @@
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid-spring-boot-starter</artifactId>
-			<version>1.1.16</version>
+			<version>${druid-spring-boot-version}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-autoconfigure</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>org.mybatis.spring.boot</groupId>
+					<artifactId>mybatis-spring-boot-starter</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>

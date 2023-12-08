@@ -6,7 +6,7 @@
 	<groupId>io.github.githublaohu</groupId>
 	<artifactId>lamp-dependent</artifactId>
 	<name>lamp-dependent</name>
-	<version>0.1.0</version>
+	<version>1.0.0</version>
 	<packaging>pom</packaging>
 	<url>https://github.com/githublaohu/lamp-dependent</url>
 	<scm>
@@ -44,7 +44,8 @@
 		<module>shardingsphere-dependent</module>
 		<module>test-dependent</module>
 		<module>log-dependent-all</module>
-	</modules>
+        <module>business</module>
+    </modules>
 	<profiles>
 		<profile>
 			<id>sonatype</id>
