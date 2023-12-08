@@ -15,7 +15,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<powermock.version>2.0.7</powermock.version>
-		<junit.vesion>4.13</junit.vesion>
+		<junit.vesion>4.13.1</junit.vesion>
 	</properties>
 	<dependencies>
 		<!-- 单元测试与mock -->
