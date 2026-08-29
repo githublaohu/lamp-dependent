@@ -6,10 +6,9 @@
     <parent>
         <groupId>io.github.githublaohu</groupId>
         <artifactId>lamp-dependent</artifactId>
-        <version>1.0.0</version>
+        <version>1.0.8</version>
     </parent>
 
-    <groupId>cn.lampup.decoration.example-springmvc</groupId>
     <artifactId>business</artifactId>
     <packaging>pom</packaging>
     <modules>

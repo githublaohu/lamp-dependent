@@ -6,33 +6,47 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>test-dependent</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.8</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>test-mock-dependent</artifactId>
+	<packaging>pom</packaging>
 	<name>test-mock-dependent</name>
 	<url>http://maven.apache.org</url>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<powermock.version>2.0.7</powermock.version>
-		<junit.vesion>4.13</junit.vesion>
+		<powermock.version>2.0.9</powermock.version>
+		<junit.vesion>5.14.3</junit.vesion>
+		<mockiot.version>5.23.0</mockiot.version>
+		<h2.version>2.4.240</h2.version>
 	</properties>
 	<dependencies>
-		<!-- 单元测试与mock -->
+		<!-- Mockito 对 JUnit 5 的扩展支持 -->
 		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-api-mockito2</artifactId>
-			<version>${powermock.version}</version>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-junit-jupiter</artifactId>
+			<version>${mockiot.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.jupiter</groupId>
+					<artifactId>junit-jupiter-api</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
-			<groupId>org.powermock</groupId>
-			<artifactId>powermock-module-junit4</artifactId>
-			<version>${powermock.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-api</artifactId>
 			<version>${junit.vesion}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.junit.vintage</groupId>
+			<artifactId>junit-vintage-engine</artifactId>
+			<version>${junit.vesion}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<version>${h2.version}</version>
 		</dependency>
 	</dependencies>
 </project>

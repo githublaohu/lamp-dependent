@@ -6,10 +6,11 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>log-dependent-all</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.8</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>log4j2-dependent</artifactId>
+	<packaging>pom</packaging>
 	<name>log4j2-dependent</name>
 	<url>http://maven.apache.org</url>
 	<properties>

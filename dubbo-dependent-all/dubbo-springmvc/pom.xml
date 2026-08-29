@@ -7,10 +7,11 @@
 	<parent>
 		<groupId>io.github.githublaohu</groupId>
 		<artifactId>dubbo-dependent-all</artifactId>
-		<version>1.0.0</version>
+		<version>1.0.8</version>
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 	<artifactId>dubbo-springmvc</artifactId>
+	<packaging>pom</packaging>
 
 	<url>https://github.com/githublaohu/lamp-dependent</url>
 	<scm>
